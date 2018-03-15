@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Hello! this is another message from Haonan</h2>
+
+<p>Replace all the bad words below:</p>
+
+<button onclick="love()">Change it!</button>
+
+<p id="demo1">I hate you!</p>
+<p id="demo2">You are ugly!!</p>
+
+
+<script>
+function love() {
+    var str1 = document.getElementById("demo1").innerHTML; 
+    var str2 = document.getElementById("demo2").innerHTML;
+    var txt1 = str1.replace(/hate/g,"love");
+    var txt2 = str2.replace(/ugly/g,"very beautiful");
+    document.getElementById("demo1").innerHTML = txt1;
+    document.getElementById("demo2").innerHTML = txt2;
+
+}
+</script>
+
+</body>
+</html>
